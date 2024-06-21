@@ -1,24 +1,9 @@
-# README
+# Rails Web Scraper with Nokogiri and Mailer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails application performs web scraping using the Nokogiri gem. It includes a mailer for development purposes and optionally uses Active Job to schedule scraping tasks. The scraper checks for specific text within a class and sends an email based on whether the text matches "match", "exit", or "not_exist".
 
-Things you may want to cover:
+## Features
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- **Web Scraping**: Uses Nokogiri to scrape web pages.
+- **Email Notifications**: Sends emails based on the scraping results.
+- **Background Jobs (Optional)**: Schedules scraping tasks using Active Job.
